@@ -1,0 +1,1 @@
+If you see the code, the contract is using call function without specifying the gas, so we can simple write a malicous contract and wrtie a fallback function that will run infinite loop, so that will cause the contract not to work correctly.

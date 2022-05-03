@@ -1,0 +1,1 @@
+You need to trigger the recieve() function so that it will send you ether. At the time, it send you ether it will trigger the recieve() the function and a revert will be executed, so you will not recieve any ether and the contract will stop working.

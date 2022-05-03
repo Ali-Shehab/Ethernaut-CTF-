@@ -1,0 +1,4 @@
+dotenv: .env
+ADDRESS: '0xd4d05A41D3a5cE9B91080176B746F83466780Cae'
+wallets:
+  from_key: ${PRIVATE_KEY}

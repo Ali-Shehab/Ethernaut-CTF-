@@ -1,0 +1,5 @@
+dotenv: .env
+ADDRESS: '0xAbb8D88d7D44f72fA4D48EF95feC1a1C6829ADe2'
+wallets:
+  from_key: ${PRIVATE_KEY}
+project_id: ${WEB3_ALCHEMY_PROJECT_ID}

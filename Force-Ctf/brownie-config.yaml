@@ -1,0 +1,6 @@
+dotenv: .env
+ADDRESS: '0x95Cb1e741b9867BB4ce04c337bB285Ff445Cd9a7'
+wallets:
+  from_key: ${PRIVATE_KEY}
+
+project_id: ${WEB3_INFURA_PROJECT_ID}
