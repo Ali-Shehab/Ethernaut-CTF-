@@ -13,6 +13,7 @@ contract MYTOKEN is ERC20 {
 }
 ```
 Now we can swap for 100 of token 1 and same for token 2.
+
 MYTOKEN = (CONTRACT_ADDRESS)
 
 t1 = await contract.token1()
