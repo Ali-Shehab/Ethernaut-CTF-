@@ -4,6 +4,11 @@ Notes before solving:
 3. We have function retract that allow us to pop the top from the array.
 4. We have revise function that allow us to replace the inside the array.
 
+Since mappings and dynamic arrays has an unpredictable size, they use Keccak-256 hash computation to find the starting position of the value or the array data.
+For dynamic arrays, [the] slot stores the number of elements in the array (byte arrays and strings are an exception, see below). For mappings, the slot is unused (but it is needed so that two equal mappings after each other will use a different hash distribution). Array data is located at keccak256(p) and the value corresponding to a mapping key k is located at keccak256(k . p) where . is concatenation.
+![image](https://user-images.githubusercontent.com/73179781/182036668-6defccf8-34d8-47f3-ad8a-a2560275f167.png)
+
+
 ## How we will attack:
 1. Call make_contact and turn contact to true.
 2. Then we will call retract inorder to underflow and have full control on contract storage.
