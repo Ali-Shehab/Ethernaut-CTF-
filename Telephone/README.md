@@ -1,4 +1,4 @@
-This is an easy contract, just by calling the ```changeOwner``` function and passing your account as a parameter. 
+This is an easy contract, just by calling the ```changeOwner``` function from a contract not directly from the user and passing your account as a parameter. 
 It will pass the if() and then you will be the owner.
 
 
